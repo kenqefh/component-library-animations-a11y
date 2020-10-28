@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Piazzolla:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+
+:root {
+  --gray-3-color: #f5f5f5; /* code background */
+  --gray-4-color: #e5e5e5; /* page background */
+  --gray-5-color: #d9d9d9; /* header border-bottom */
+  --gray-6-color: #dfdfdf; /* border row table */
+  --daybreak-color: #e6f7ff; /* navbar background */
+
+  --blue-color: #118ab2;
+  --green-color: #06d6a0;
+  --yellow-color: #ffd166;
+  --red-color: #ef476f;
+  --midnight-color: #073b4c;
+  --light-color: #f8f9fa;
+  --white-color: #ffffff;
+  --gray-color: #888888;
+  --black-color: #262626;
+  --black2-color: #212529;
+
+  --body-font: "Montserrat", sans-serif;
+  --headings-font: "Piazzolla", serif;
+  --system-font: "SF Pro Display", "Roboto", sans-serif;
+  --code-font: "Source Code Pro", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}

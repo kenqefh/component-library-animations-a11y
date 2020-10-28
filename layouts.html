@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Library - Layouts</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/4016a7fab4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header_page">
+      <img class="header_page__image" src="images/Desain_logo.png" alt="" />
+    </header>
+
+    <div class="page">
+      <nav class="page__nav">
+        <ul class="page_navbar">
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="index.html">
+              <p>Typography</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="elements.html">
+              <p>Elements</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="blocks.html">
+              <p>Blocks</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a
+              class="page_navbar__link page_navbar__link--active"
+              href="layouts.html"
+            >
+              <p>Layouts</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="page1.html">
+              <p>Page1</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="page__content">
+        <!-- Section of articles -->
+        <section class="section">
+          <h2 class="section__title">Layouts</h2>
+
+          <!-- Two colums with header and footer -->
+          <article class="article">
+            <h3 class="article__title">Two colums with header and footer</h3>
+            <div class="article__example">
+              <div class="layout layout--1">
+                <div class="layout__header">header (fixed)</div>
+                <div class="layout__nav">nav (fixed)</div>
+                <div class="layout__main">main (flex)</div>
+                <div class="layout__footer">footer (fixed)</div>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div&gt; class="layout layout--1"&gt;
+  &lt;div&gt; class="layout__header"&gt;header (fixed)&lt;/div&gt;
+  &lt;div&gt;&gt; class="layout__nav"&gt;nav (fixed)&lt;/div&gt;&gt;
+  &lt;div&gt; class="layout__main"&gt;main (flex)&lt;/div&gt;
+  &lt;div&gt;&gt; class="layout__footer"&gt;footer (fixed)&lt;/div&gt;&gt;
+&lt;/div&gt;
+</code></pre>
+          </article>
+          <!-- END Two colums with header and footer -->
+
+          <!-- Three columns with header and footer -->
+          <article class="article">
+            <h3 class="article__title">Three columns with header and footer</h3>
+            <div class="article__example">
+              <div class="layout layout--2">
+                <div class="layout__header">header (fixed)</div>
+                <div class="layout__nav">nav (fixed)</div>
+                <div class="layout__main">main (flex)</div>
+                <div class="layout__aside">aside (flex)</div>
+                <div class="layout__footer">footer (fixed)</div>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div class="layout layout--2"&gt;
+  &lt;div class="layout__header"&gt;header (fixed)&lt;/div&gt;
+  &lt;div class="layout__nav"&gt;nav (fixed)&lt;/div&gt;
+  &lt;div class="layout__main"&gt;main (flex)&lt;/div&gt;
+  &lt;div class="layout__aside"&gt;aside (flex)&lt;/div&gt;
+  &lt;div class="layout__footer"&gt;footer (fixed)&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </article>
+          <!-- END Three columns with header and footer -->
+
+          <!-- Three columns -->
+          <article class="article">
+            <h3 class="article__title">Three columns</h3>
+            <div class="article__example">
+              <div class="layout layout--3">
+                <div class="layout__nav">nav (fixed)</div>
+                <div class="layout__header">header (fixed)</div>
+                <div class="layout__aside">aside (flex)</div>
+                <div class="layout__main">main (flex)</div>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div class="layout layout--3"&gt;
+  &lt;div class="layout__nav"&gt;nav (fixed)&lt;/div&gt;
+  &lt;div class="layout__header"&gt;header (fixed)&lt;/div&gt;
+  &lt;div class="layout__aside"&gt;aside (flex)&lt;/div&gt;
+  &lt;div&gt; class="layout__main"&gt;main (flex)&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </article>
+          <!-- END Three columns -->
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

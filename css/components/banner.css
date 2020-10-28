@@ -1,0 +1,28 @@
+.banner {
+  background-image: url("./../../images/background.png");
+  padding-top: 48px;
+  padding-left: 96px;
+  color: var(--white-color);
+  font-family: "Raleway", sans-serif;
+  max-width: 640px;
+  height: 322px;
+}
+.banner__title {
+  padding-bottom: 24px;
+
+  font-family: var(--headings-font);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 38px;
+}
+
+.banner__text {
+  padding-bottom: 48px;
+
+  font-family: var(--headings-font);
+  font-weight: 600;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}

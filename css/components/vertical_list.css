@@ -1,0 +1,46 @@
+/** Nav bar list **/
+.list_items {
+  list-style: none;
+}
+
+.list_items__item--link {
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  padding: 0 16px;
+  align-items: center;
+  text-decoration: none;
+  color: var(--gray-color);
+
+  font-family: var(--headings-font);
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.nav-item--active {
+  color: var(--blue-color);
+  background-color: var(--daybreak-color);
+}
+
+/**
+vertical list
+ */
+.vertical_list {
+  list-style: none;
+}
+.vertical_list__item {
+  width: 180px;
+  height: 40px;
+
+  font-family: var(--headings-font);
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  padding: 8px 16px;
+
+  border: 1px solid var(--light-color);
+}
+.vertical-list--active {
+  background-color: var(--blue-color);
+  color: var(--white-color);
+}

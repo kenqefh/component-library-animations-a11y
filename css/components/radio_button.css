@@ -1,0 +1,14 @@
+.radio_button {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.radio_button:checked + label {
+  font-weight: 400;
+}
+
+.radio_button + label {
+  margin-top: 8px;
+  margin-right: 16px;
+  margin-bottom: 8px;
+  padding-left: 4px;
+}

@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Library - Elements</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/4016a7fab4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header_page">
+      <img class="header_page__image" src="images/Desain_logo.png" alt="" />
+    </header>
+
+    <div class="page">
+      <nav class="page__nav">
+        <ul class="page_navbar">
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="index.html">
+              <p>Typography</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a
+              class="page_navbar__link page_navbar__link--active"
+              href="elements.html"
+            >
+              <p>Elements</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="blocks.html">
+              <p>Blocks</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="layouts.html">
+              <p>Layouts</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="page1.html">
+              <p>Page1</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="page__content">
+        <!-- Section of articles-->
+        <section class="section">
+          <h2 class="section__title">Elements</h2>
+
+          <!-- Base Button -->
+          <article class="article">
+            <h3 class="article__title">Base Button</h3>
+            <div class="article__example">
+              <button class="button">
+                <i class="fas fa-download"></i> Base Button
+              </button>
+            </div>
+            <pre class="article__code">
+<code class="code"><span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">"button"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;i</span> <span class="code_red">class=</span><span class="code_yellow">"fas fa-download"</span><span class="code_blue">&gt;&lt;/i&gt;</span><span class="code_gray"> Base Button</span>
+<span class="code_blue">&lt;/button&gt;</span>
+</code></pre>
+          </article>
+
+          <!-- Button types -->
+          <article class="article">
+            <h3 class="article__title">Button Types</h3>
+            <div class="article__example">
+              <button class="button button--primary">Primary</button>
+              <button class="button button--secundary">Secundary</button>
+              <button class="button button--success">Success</button>
+              <button class="button button--warning">Warning</button>
+              <button class="button button--danger">Danger</button>
+              <button class="button button--transparent">Transparent</button>
+            </div>
+            <pre class="article__code">
+<code class="code"><span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">button button--primary</span><span class="code_blue">&gt;</span><span class="code_gray">Primary</span><span class="code_blue">&lt;/button&gt;</span>
+<span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">button button--secundary</span><span class="code_blue">&gt;</span><span class="code_gray">Secundary</span><span class="code_blue">&lt;/button&gt;</span>
+<span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">button button--success</span><span class="code_blue">&gt;</span><span class="code_gray">Success</span><span class="code_blue">&lt;/button&gt;</span>
+<span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">button button--warning</span><span class="code_blue">&gt;</span><span class="code_gray">Warning</span><span class="code_blue">&lt;/button&gt;</span>
+<span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">button button--danger</span><span class="code_blue">&gt;</span><span class="code_gray">Danger</span><span class="code_blue">&lt;/button&gt;</span>
+<span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">button button--transparent</span><span class="code_blue">&gt;</span><span class="code_gray">Transparent</span><span class="code_blue">&lt;/button&gt;</span>
+</code></pre>
+          </article>
+
+          <!-- Button styles -->
+
+          <article class="article">
+            <h3 class="article__title">Button Styles</h3>
+            <div class="article__example">
+              <button class="button button--primary">Primary</button>
+              <button class="button button--primary">
+                <i class="fas fa-download"></i> With Icon
+              </button>
+              <button class="button button--primary">
+                <i class="fas fa-download"></i>
+              </button>
+            </div>
+            <pre class="article__code">
+<code class="code"><span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">"button button--primary"</span><span class="code_blue">&gt;</span>
+  <span class="code_gray"> Primary</span>
+<span class="code_blue">&lt;/button&gt;</span>
+
+<span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">"button button--primary"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;i</span> <span class="code_red">class=</span><span class="code_yellow">"fas fa-download"</span><span class="code_blue">&gt;&lt;/i&gt;</span><span class="code_gray"> With Icon</span>
+<span class="code_blue">&lt;/button&gt;</span>
+
+<span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">"button button--primary"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;i</span> <span class="code_red">class=</span><span class="code_yellow">"fas fa-download"</span><span class="code_blue">&gt;&lt;/i&gt;</span>
+<span class="code_blue">&lt;/button&gt;</span>
+</code></pre>
+          </article>
+
+          <!-- Button sizes -->
+          <article class="article">
+            <h3 class="article__title">Button Sizes</h3>
+            <div class="article__example article__example--bottom-align">
+              <button class="button button--primary">Primary</button>
+              <button class="button button--primary button--small">
+                Small
+              </button>
+              <button class="button button--primary button--large">
+                Large
+              </button>
+            </div>
+            <pre class="article__code">
+<code class="code"><span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">"button button--primary"</span><span class="code_blue">&gt;</span>
+  <span class="code_gray"> Primary</span>
+<span class="code_blue">&lt;/button&gt;</span>
+
+<span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">"button button--primary button--small"</span><span class="code_blue">&gt;</span>
+  <span class="code_gray"> Small</span>
+<span class="code_blue">&lt;/button&gt;</span>
+
+<span class="code_blue">&lt;button</span> <span class="code_red">class=</span><span class="code_yellow">"button button--primary button--large"</span><span class="code_blue">&gt;</span>
+  <span class="code_gray"> Large</span>
+<span class="code_blue">&lt;/button&gt;</span>
+</code></pre>
+          </article>
+
+          <!-- Images -->
+
+          <article class="article">
+            <h3 class="article__title">Images</h3>
+            <div class="article__example">
+              <img class="image" src="images/image_1.png" alt="img" />
+              <img
+                class="image image--circle"
+                src="images/image_1.png"
+                alt="img"
+              />
+              <img
+                class="image image--shadow"
+                src="images/image_1.png"
+                alt="img"
+              />
+              <img
+                class="image image--shadow image--circle"
+                src="images/image_1.png"
+                alt="img"
+              />
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;img class="image" src="images/image_1.png" alt="img" /&gt;
+&lt;img class="image image--circle" src="images/image_1.png" alt="img" /&gt;
+&lt;img class="image image--shadow" src="images/image_1.png" alt="img" /&gt;
+&lt;img
+  class="image image--shadow image--circle"
+  src="images/image_1.png"
+  alt="img"
+/&gt;
+</code></pre>
+          </article>
+
+          <!-- Tabs -->
+          <article class="article">
+            <h3 class="article__title">Tabs</h3>
+            <div class="article__example">
+              <div class="tab">
+                <button class="tab__link">Default</button>
+                <button class="tab__link tab__link--hover">Hover</button>
+                <button class="tab__link tab__link--active">Active</button>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div class="tab"&gt;
+  &lt;button class="tab__link"&gt;Default&lt;/button&gt;
+  &lt;button class="tab__link tab__link--hover"&gt;Hover&lt;/button&gt;
+  &lt;button class="tab__link tab__link--active"&gt;Active&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </article>
+
+          <!-- List Items -->
+          <article class="article">
+            <h3 class="article__title">List Items</h3>
+            <div class="article__example">
+              <ul class="listitems">
+                <li>
+                  <h4 class="listitems__item">List Item</h4>
+                </li>
+                <li>
+                  <h4 class="listitems__item listitem--hover">
+                    List Item Hover
+                  </h4>
+                </li>
+                <li>
+                  <h4 class="listitems__item listitem--active">
+                    List Item Active
+                  </h4>
+                </li>
+              </ul>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;ul class="listitems"&gt;
+  &lt;li&gt;
+    &lt;h4 class="listitems__item"&gt;List Item&lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4&gt; class="listitems__item listitem--hover"&gt;
+      List Item Hover
+    &lt;/h4&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;h4&gt; class="listitems__item listitem--active"&gt;
+      List Item Active
+    &lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+          </article>
+
+          <!-- Input Checkbox -->
+          <article class="article">
+            <h3 class="article__title">Input: Checkbox</h3>
+            <div class="article__example">
+              <label class="checkbox">
+                <input type="checkbox" name="state" value="checked" checked />
+                Checked
+              </label>
+              <label class="checkbox">
+                <input type="checkbox" name="state" value="unchecked" />
+                Unchecked
+              </label>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" name="state" value="checked" checked /&gt;
+  Checked
+&lt;/label&gt;
+&lt;label class="checkbox"&gt;
+  &lt;input type="checkbox" name="state" value="unchecked" /&gt;
+  Unchecked
+&lt;/label&gt;
+</code></pre>
+          </article>
+
+          <!-- Checkbox Group -->
+          <article class="article">
+            <h3 class="article__title">Checkbox Group</h3>
+            <div class="article__example">
+              <div class="checkbox_group">
+                <p class="checkbox_group__description">
+                  Choose horizontal options:
+                </p>
+
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="horizontal"
+                    value="horizontal1"
+                    checked
+                  />
+                  Horizontal 1
+                </label>
+
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="horizontal"
+                    value="horizontal2"
+                  />
+                  Horizontal 2
+                </label>
+
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="horizontal"
+                    value="horizontal3"
+                  />
+                  Horizontal 3
+                </label>
+              </div>
+
+              <div class="checkbox_group checkbox_group--vertical">
+                <p class="checkbox_group__description">
+                  <span class="warning">*</span>Choose vertical options:
+                </p>
+
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="vertical"
+                    value="vertical1"
+                    checked
+                  />
+                  Vertical 1
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="vertical" value="vertical2" />
+                  Vertical 2
+                </label>
+
+                <label class="checkbox">
+                  <input type="checkbox" name="vertical" value="vertical3" />
+                  Vertical 3
+                </label>
+
+                <span class="warning text--lite">Choose at least 1 option</span>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div class="checkbox_group"&gt;
+  &lt;p class="checkbox_group__description"&gt;
+    Choose horizontal options:
+  &lt;/p&gt;
+
+  &lt;label class="checkbox"&gt;
+    &lt;input
+      type="checkbox"
+      name="horizontal"
+      value="horizontal1"
+      checked
+    /&gt;
+    Horizontal 1
+  &lt;/label&gt;
+
+  &lt;label class="checkbox"&gt;
+    &lt;input
+      type="checkbox"
+      name="horizontal"
+      value="horizontal2"
+    /&gt;
+    Horizontal 2
+  &lt;/label&gt;
+
+  &lt;label class="checkbox"&gt;
+    &lt;input
+      type="checkbox"
+      name="horizontal"
+      value="horizontal3"
+    /&gt;
+    Horizontal 3
+  &lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class="checkbox_group checkbox_group--vertical"&gt;
+  &lt;p class="checkbox_group__description"&gt;
+    &lt;span class="warning"&gt;*&lt;/span&gt;Choose vertical options:
+  &lt;/p&gt;
+
+  &lt;label class="checkbox"&gt;
+    &lt;input
+      type="checkbox"
+      name="vertical"
+      value="vertical1"
+      checked
+    /&gt;
+    Vertical 1
+  &lt;/label&gt;
+
+  &lt;label class="checkbox"&gt;
+    &lt;input type="checkbox" name="vertical" value="vertical2" /&gt;
+    Vertical 2
+  &lt;/label&gt;
+
+  &lt;label class="checkbox"&gt;
+    &lt;input type="checkbox" name="vertical" value="vertical3" /&gt;
+    Vertical 3
+  &lt;/label&gt;
+
+  &lt;span class="warning text--lite"&gt;Choose at least 1 option&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </article>
+
+          <!-- Input: Radio Button -->
+          <article class="article">
+            <h3 class="article__title">Input: Radio Button</h3>
+            <div class="article__example">
+              <input
+                class="radio_button"
+                type="radio"
+                name="radio"
+                value="checked"
+                id="radio_button1"
+                checked
+              />
+              <label for="radio_button1"> Checked</label>
+              <input
+                class="radio_button"
+                type="radio"
+                name="radio"
+                value="unchecked"
+                id="radio_button2"
+              />
+              <label for="radio_button2"> Unchecked</label>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;input
+  class="radio_button"
+  type="radio"
+  name="radio"
+  value="checked"
+  id="radio_button1"
+  checked
+/&gt;
+&lt;label for="radio_button1"&gt; Checked&lt;/label&gt;
+&lt;input
+  class="radio_button"
+  type="radio"
+  name="radio"
+  value="unchecked"
+  id="radio_button2"
+/&gt;
+&lt;label&gt; for="radio_button2"&gt; Unchecked&lt;/label&gt;
+</code></pre>
+          </article>
+
+          <!-- Radio Button Group -->
+          <article class="article">
+            <h3 class="article__title">Radio Button Group</h3>
+            <div class="article__example">
+              <div class="radiobutton_group">
+                <p class="radiobutton_group__description">
+                  Choose horizontal options:
+                </p>
+
+                <input
+                  class="radio_button"
+                  type="radio"
+                  name="radiobutton_group"
+                  value="checked"
+                  id="radiobutton1"
+                  checked
+                />
+                <label for="radiobutton1"> Option 1</label>
+
+                <input
+                  class="radio_button"
+                  type="radio"
+                  name="radiobutton_group"
+                  value="checked"
+                  id="radiobutton2"
+                />
+                <label for="radiobutton2"> Option 2</label>
+
+                <input
+                  class="radio_button"
+                  type="radio"
+                  name="radiobutton_group"
+                  value="checked"
+                  id="radiobutton3"
+                />
+                <label for="radiobutton3"> Option 3</label>
+              </div>
+
+              <div class="radiobutton_group radiobutton_group--vertical">
+                <p class="radiobutton_group__description">
+                  <span class="warning">*</span> Choose horizontal options:
+                </p>
+                <div>
+                  <input
+                    class="radio_button"
+                    type="radio"
+                    name="radiobutton_group_vertical"
+                    value="checked"
+                    id="radiobutton11"
+                  />
+                  <label for="radiobutton11"> Option 1</label>
+                </div>
+
+                <div>
+                  <input
+                    class="radio_button"
+                    type="radio"
+                    name="radiobutton_group_vertical"
+                    value="checked"
+                    id="radiobutton12"
+                  />
+                  <label for="radiobutton12"> Option 2</label>
+                </div>
+                <div>
+                  <input
+                    class="radio_button"
+                    type="radio"
+                    name="radiobutton_group_vertical"
+                    value="checked"
+                    id="radiobutton13"
+                  />
+                  <label for="radiobutton13"> Option 3</label>
+                </div>
+                <span class="warning text--lite">Choose 1 option</span>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div class="radiobutton_group"&gt;
+  &lt;p class="radiobutton_group__description"&gt;
+    Choose horizontal options:
+  &lt;/p&gt;
+
+  &lt;input
+    class="radio_button"
+    type="radio"
+    name="radiobutton_group"
+    value="checked"
+    id="radiobutton1"
+    checked
+  /&gt;
+  &lt;label for="radiobutton1"&gt; Option 1&lt;/label&gt;
+
+  &lt;input
+    class="radio_button"
+    type="radio"
+    name="radiobutton_group"
+    value="checked"
+    id="radiobutton2"
+  /&gt;
+  &lt;label for="radiobutton2"&gt; Option 2&lt;/label&gt;
+
+  &lt;input
+    class="radio_button"
+    type="radio"
+    name="radiobutton_group"
+    value="checked"
+    id="radiobutton3"
+  /&gt;
+  &lt;label for="radiobutton3"&gt; Option 3&lt;/label&gt;
+&lt;/div&gt;
+
+&lt;div class="radiobutton_group radiobutton_group--vertical"&gt;
+  &lt;p class="radiobutton_group__description"&gt;
+    &lt;span class="warning"&gt;*&lt;/span&gt; Choose horizontal options:
+  &lt;/p&gt;
+  &lt;div&gt;
+    &lt;input
+      class="radio_button"
+      type="radio"
+      name="radiobutton_group_vertical"
+      value="checked"
+      id="radiobutton11"
+    /&gt;
+    &lt;label for="radiobutton11"&gt; Option 1&lt;/label&gt;
+  &lt;/div&gt;
+
+  &lt;div&gt;
+    &lt;input
+      class="radio_button"
+      type="radio"
+      name="radiobutton_group_vertical"
+      value="checked"
+      id="radiobutton12"
+    /&gt;
+    &lt;label for="radiobutton12"&gt; Option 2&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;div&gt;
+    &lt;input
+      class="radio_button"
+      type="radio"
+      name="radiobutton_group_vertical"
+      value="checked"
+      id="radiobutton13"
+    /&gt;
+    &lt;label for="radiobutton13"&gt; Option 3&lt;/label&gt;
+  &lt;/div&gt;
+  &lt;span class="warning text--lite"&gt;Choose 1 option&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+          </article>
+
+          <!-- Input: text -->
+          <article class="article">
+            <h3 class="article__title">Input: text</h3>
+            <div class="article__example flex--vertical">
+              <input class="input-text" type="text" placeholder="Placeholder" />
+              <input
+                class="input-text input--focus"
+                type="text"
+                value="Focus State"
+              />
+              <input class="input-text" type="text" value="Filled" />
+              <input
+                class="input-text input--error"
+                type="text"
+                value="Error"
+              />
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;input class="input-text" type="text" placeholder="Placeholder" /&gt;
+&lt;input class="input-text input--focus" type="text" value="Focus State" /&gt;
+&lt;input class="input-text" type="text" value="Filled" /&gt;
+&lt;input class="input-text input--error" type="text" value="Error" /&gt;</code></pre>
+          </article>
+
+          <!-- Input: dropdown -->
+          <article class="article">
+            <h3 class="article__title">Input: dropdown</h3>
+            <div class="article__example flex--vertical">
+              <select class="input-dropdown" name="dropdown-default">
+                <option value="default-option" selected>Default Option</option>
+                <option value="second-option">Second Option</option>
+              </select>
+              <select
+                class="input-dropdown input--focus"
+                name="dropdown-default"
+              >
+                <option value="default-option" selected>Focus state</option>
+                <option value="second-option">Second Option</option>
+              </select>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;select class="input-dropdown" name="dropdown-default"&gt;
+  &lt;option value="default-option" selected&gt;Default Option&lt;/option&gt;
+  &lt;option value="second-option"&gt;Second Option&lt;/option&gt;
+&lt;/select&gt;
+&lt;select
+  class="input-dropdown input--focus"
+  name="dropdown-default"
+&gt;
+  &lt;option value="default-option" selected&gt;Focus state&lt;/option&gt;
+  &lt;option value="second-option"&gt;Second Option&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+          </article>
+
+          <!-- Input Group -->
+          <article class="article">
+            <h3 class="article__title">Input Group</h3>
+            <div class="article__example">
+              <div class="column input_group">
+                <label>Label</label>
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Placeholder"
+                />
+                <span class="text--lite">With help text</span>
+              </div>
+              <div class="input_group">
+                <label>Inline</label>
+                <input
+                  class="input-text"
+                  type="text"
+                  placeholder="Placeholder"
+                />
+              </div>
+
+              <div class="column input_group">
+                <label><span class="warning">*</span> Label</label>
+                <input
+                  class="input-text input--error"
+                  type="text"
+                  placeholder="Placeholder"
+                  value="Error"
+                />
+                <span class="warning text--lite">Error message</span>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div class="column input_group"&gt;
+  &lt;label&gt;Label&lt;/label&gt;
+  &lt;input
+    class="input-text"
+    type="text"
+    placeholder="Placeholder"
+  /&gt;
+  &lt;span&gt; class="text--lite"&gt;With help text&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class="input_group"&gt;
+  &lt;label&gt;Inline&lt;/label&gt;
+  &lt;input
+    class="input-text"
+    type="text"
+    placeholder="Placeholder"
+  /&gt;
+&lt;/div&gt;
+
+&lt;div class="column input_group"&gt;
+  &lt;label&gt;&lt;span&gt; class="warning"&gt;*&lt;/span&gt; Label&lt;/label&gt;
+  &lt;input
+    class="input-text input--error"
+    type="text"
+    placeholder="Placeholder"
+    value="Error"
+  /&gt;
+  &lt;span class="warning text--lite"&gt;Error message&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+          </article>
+
+          <!-- Table cells -->
+          <article class="article">
+            <h3 class="article__title">Table cells</h3>
+            <div class="article__example">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="table__header">
+                      <h5 class="table__header-title">Table Head</h5>
+                      <div class="table__header-arrows">
+                        <button class="table__header-arrow">
+                          <span><i class="fas fa-sort-up"></i></span>
+                        </button>
+                        <button class="table__header-arrow">
+                          <span><i class="fas fa-sort-down"></i></span>
+                        </button>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__row">
+                    <td class="table__row-field">Table Cell</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__row-field">Striped Cell</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th class="table__header"&gt;
+        &lt;h5 class="table__header-title"&gt;Table Head&lt;/h5&gt;
+        &lt;div class="table__header-arrows"&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-up"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-down"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr class="table__row"&gt;
+      &lt;td class="table__row-field"&gt;Table Cell&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr class="table__row"&gt;
+      &lt;td class="table__row-field"&gt;Striped Cell&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

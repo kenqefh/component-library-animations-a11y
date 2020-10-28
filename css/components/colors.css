@@ -1,0 +1,61 @@
+.colors {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+}
+.color {
+  display: flex;
+}
+.color__circle {
+  width: 24px;
+  height: 24px;
+
+  border-radius: 50%;
+}
+.color__description {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+
+  padding-left: 8px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.color__circle--blue {
+  background-color: var(--blue-color);
+}
+
+.color__circle--green {
+  background-color: var(--green-color);
+}
+
+.color__circle--yellow {
+  background-color: var(--yellow-color);
+}
+
+.color__circle--red {
+  background-color: var(--red-color);
+}
+
+.color__circle--midnight {
+  background-color: var(--midnight-color);
+}
+
+.color__circle--light {
+  background-color: var(--light-color);
+  border: 1px solid #d9d9d9;
+}
+
+.color__circle--white {
+  background-color: var(--white-color);
+  border: 1px solid #d9d9d9;
+}
+
+.color__circle--gray {
+  background-color: var(--gray-color);
+}
+
+.color__circle--black {
+  background-color: var(--black-color);
+}

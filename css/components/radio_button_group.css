@@ -1,0 +1,13 @@
+.radiobutton_group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.radiobutton_group--vertical {
+  flex-direction: column;
+}
+
+.radiobutton_group__description {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+}

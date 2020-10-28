@@ -1,0 +1,69 @@
+/* Layout basic settings */
+.layout {
+  padding: 8px;
+  display: grid;
+  gap: 16px;
+}
+
+.layout__header {
+  grid-area: layout__header;
+  padding: 8px 16px;
+  background-color: var(--light-color);
+}
+
+.layout__nav {
+  grid-area: layout__nav;
+  padding: 8px 16px;
+  background-color: var(--light-color);
+}
+
+.layout__main {
+  grid-area: layout__main;
+  padding: 8px 16px;
+  background-color: var(--light-color);
+}
+
+.layout__aside {
+  grid-area: layout__aside;
+  padding: 8px 16px;
+  background-color: var(--light-color);
+}
+
+.layout__footer {
+  grid-area: layout__footer;
+  padding: 8px 16px;
+  background-color: var(--light-color);
+}
+/* END Layout basic settings */
+
+/* Layout 1 */
+.layout--1 {
+  grid-template-areas:
+    "layout__header layout__header"
+    "layout__nav layout__main"
+    "layout__footer layout__footer";
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 160px 80px;
+}
+/* END Layout 1 */
+
+/* Layout 2 */
+.layout--2 {
+  grid-template-areas:
+    "layout__header layout__header layout__header"
+    "layout__nav layout__main layout__aside"
+    "layout__footer layout__footer layout__footer";
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 80px 160px 80px;
+}
+/* END Layout 2 */
+
+/* Layout 3 */
+.layout--3 {
+  grid-template-areas:
+    "layout__nav layout__header layout__aside"
+    "layout__nav layout__main layout__aside";
+  grid-template-columns: 160px 1fr 160px;
+  grid-template-rows: 80px 160px;
+}
+/* END Layout 3 */

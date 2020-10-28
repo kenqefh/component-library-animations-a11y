@@ -1,0 +1,34 @@
+.button--primary {
+  color: var(--white-color);
+  background-color: var(--blue-color);
+}
+.button--secundary {
+  color: var(--white-color);
+  background-color: var(--gray-color);
+}
+.button--success {
+  color: var(--white-color);
+  background-color: var(--green-color);
+}
+.button--warning {
+  color: var(--white-color);
+  background-color: var(--yellow-color);
+}
+.button--danger {
+  color: var(--white-color);
+  background-color: var(--red-color);
+}
+
+.button--transparent {
+  color: var(--black-color);
+}
+
+.button--primary:hover,
+.button--secundary:hover,
+.button--success:hover,
+.button--warning:hover,
+.button--danger:hover,
+.button--transparent:hover {
+  opacity: 0.85;
+  transition-duration: 0.35s;
+}

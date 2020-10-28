@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Library - Blocks</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/4016a7fab4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header_page">
+      <img class="header_page__image" src="images/Desain_logo.png" alt="" />
+    </header>
+
+    <div class="page">
+      <nav class="page__nav">
+        <ul class="page_navbar">
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="index.html">
+              <p>Typography</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="elements.html">
+              <p>Elements</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a
+              class="page_navbar__link page_navbar__link--active"
+              href="blocks.html"
+            >
+              <p>Blocks</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="layouts.html">
+              <p>Layouts</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="page1.html">
+              <p>Page1</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="page__content">
+        <!-- Section of articles -->
+        <section class="section">
+          <h2 class="section__title">Blocks</h2>
+
+          <!-- Banner -->
+          <article class="article">
+            <h3 class="article__title">Banner</h3>
+            <div class="article--banner">
+              <div class="banner">
+                <h1 class="banner__title">Full Stack Web Development</h1>
+                <h5 class="banner__text">
+                  Become a better version of yourself in only 6 months.
+                </h5>
+                <button class="button button--success">Apply now</button>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div&gt; class="banner"&gt;
+&lt;h1&gt; class="banner__title"&gt;Full Stack Web Development&lt;/h1&gt;
+&lt;h5&gt; class="banner__text"&gt;
+  Become a better version of yourself in only 6 months.
+&lt;/h5&gt;
+&lt;button&gt; class="button button--success"&gt;Apply now&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Tab Group</h3>
+            <div class="article__example">
+              <div class="tabgroup">
+                <button class="tabgroup_link">Tab</button>
+                <button class="tabgroup_link">Tab</button>
+                <button class="tabgroup_link tabgroup--active">
+                  Active Tab
+                </button>
+                <button class="tabgroup_link">Tab</button>
+                <button class="tabgroup_link">Tab</button>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div&gt; class="tabgroup"&gt;
+&lt;button&gt; class="tabgroup_link"&gt;Tab&lt;/button&gt;
+&lt;button&gt;&gt; class="tabgroup_link"&gt;Tab&lt;/button&gt;&gt;
+&lt;button&gt; class="tabgroup_link tabgroup--active"&gt;Active Tab&lt;/button&gt;
+&lt;button&gt;&gt; class="tabgroup_link"&gt;Tab&lt;/button&gt;&gt;
+&lt;button&gt; class="tabgroup_link"&gt;Tab&lt;/button&gt;
+&lt;/div&gt;
+        </code></pre>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Vertical List</h3>
+            <div class="article__example">
+              <ul class="vertical_list">
+                <li class="vertical_list__item">Item</li>
+                <li class="vertical_list__item">Item</li>
+                <li class="vertical_list__item vertical-list--active">Item</li>
+                <li class="vertical_list__item">Item</li>
+                <li class="vertical_list__item">Item</li>
+              </ul>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;ul class="vertical_list"&gt;
+&lt;li class="vertical_list__item"&gt;Item&lt;/li&gt;
+&lt;li class="vertical_list__item"&gt;Item&lt;/li&gt;
+&lt;li class="vertical_list__item vertical-list--active"&gt;Item&lt;/li&gt;
+&lt;li class="vertical_list__item"&gt;Item&lt;/li&gt;
+&lt;li class="vertical_list__item"&gt;Item&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Card</h3>
+            <div class="article__example article--card">
+              <div class="card">
+                <img class="card__img" src="images/background.png" alt="" />
+                <h4 class="card__title">Card Title</h4>
+                <p class="card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris sed ultrices erat, non accumsan ex. Suspendisse
+                  potenti. Aenean venenatis risus vitae arcu ultrices, id
+                  convallis turpis sodales.
+                </p>
+                <button class="button button--success card__button">
+                  <span class="button__span">Button</span>
+                </button>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div&gt; class="card"&gt;
+&lt;img class="card__img" src="images/background.png" alt="" /&gt;
+&lt;h4&gt; class="card__title"&gt;Card Title&lt;/h4&gt;
+&lt;p&gt; class="card__text"&gt;
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+  sed ultrices erat, non accumsan ex. Suspendisse potenti. Aenean
+  venenatis risus vitae arcu ultrices, id convallis turpis
+  sodales.
+&lt;/p&gt;
+&lt;button&gt; class="button button--success card__button"&gt;
+  &lt;span&gt; class="button__span"&gt;Button&lt;/span&gt;
+&lt;/button&gt;
+&lt;/div&gt;
+        </code></pre>
+          </article>
+
+          <article>
+            <h3 class="article__title">Form</h3>
+            <div class="article__example">
+              <form class="form">
+                <fieldset class="form__fieldset">
+                  <legend>
+                    <h3 class="form__title">Update your profile</h3>
+                  </legend>
+                  <div class="form__field">
+                    <label class="form__label"
+                      ><span class="warning">*</span> Name</label
+                    >
+                    <input
+                      class="form__input"
+                      type="text"
+                      placeholder="Placeholder"
+                    />
+                  </div>
+
+                  <div class="form__field">
+                    <label class="form__label"
+                      ><span class="warning">*</span> Email</label
+                    >
+                    <input
+                      class="form__input"
+                      type="email"
+                      placeholder="Placeholder"
+                    />
+                  </div>
+
+                  <div class="form__field">
+                    <label class="form__label">Gender</label>
+                    <div>
+                      <label class="--margin-right">
+                        <input type="radio" name="gender" id="female" />
+                        Female
+                      </label>
+                      <label class="--margin-right">
+                        <input type="radio" name="gender" id="male" />
+                        Male
+                      </label>
+                      <label class="--margin-right">
+                        <input type="radio" name="gender" id="other" />
+                        Other
+                      </label>
+                    </div>
+                  </div>
+
+                  <div class="form__field">
+                    <label class="form__label">Country</label>
+                    <select class="form__input" name="country">
+                      <option value="none">Select a country</option>
+                    </select>
+                  </div>
+
+                  <div class="form__field">
+                    <label class="form__label">Favorite languages</label>
+                    <div>
+                      <label class="--margin-right">
+                        <input type="checkbox" name="languages" id="ruby" />
+                        Ruby
+                      </label>
+                      <label class="--margin-right">
+                        <input type="checkbox" name="languages" id="js" />
+                        JS
+                      </label>
+                      <label class="--margin-right">
+                        <input type="checkbox" name="languages" id="python" />
+                        Python
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+                <fieldset class="form__fieldset form__fieldset--space-between">
+                  <input
+                    class="button button--primary"
+                    type="submit"
+                    value="Submit"
+                  />
+                  <button class="button button--secundary">Cancel</button>
+                </fieldset>
+              </form>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;form class="form"&gt;
+&lt;fieldset class="form__fieldset"&gt;
+  &lt;legend&gt;
+    &lt;h3 class="form__title"&gt;Update your profile&lt;/h3&gt;
+  &lt;/legend&gt;
+  &lt;div class="form__field"&gt;
+    &lt;label class="form__label"
+      &gt;&lt;span class="warning"&gt;*&lt;/span&gt; Name&lt;/label
+    &gt;
+    &lt;input
+      class="form__input"
+      type="text"
+      placeholder="Placeholder"
+    /&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form__field"&gt;
+    &lt;label class="form__label"
+      &gt;&lt;span class="warning"&gt;*&lt;/span&gt; Email&lt;/label
+    &gt;
+    &lt;input
+      class="form__input"
+      type="email"
+      placeholder="Placeholder"
+    /&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form__field"&gt;
+    &lt;label class="form__label"&gt;Gender&lt;/label&gt;
+    &lt;div&gt;
+      &lt;label class="--margin-right"&gt;
+        &lt;input type="radio" name="gender" id="female" /&gt;
+        Female
+      &lt;/label&gt;
+      &lt;label class="--margin-right"&gt;
+        &lt;input type="radio" name="gender" id="male" /&gt;
+        Male
+      &lt;/label&gt;
+      &lt;label class="--margin-right"&gt;
+        &lt;input type="radio" name="gender" id="other" /&gt;
+        Other
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form__field"&gt;
+    &lt;label class="form__label"&gt;Country&lt;/label&gt;
+    &lt;select class="form__input" name="country"&gt;
+      &lt;option value="none"&gt;Select a country&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+
+  &lt;div class="form__field"&gt;
+    &lt;label class="form__label"&gt;Favorite languages&lt;/label&gt;
+    &lt;div&gt;
+      &lt;label class="--margin-right"&gt;
+        &lt;input type="checkbox" name="languages" id="ruby" /&gt;
+        Ruby
+      &lt;/label&gt;
+      &lt;label class="--margin-right"&gt;
+        &lt;input type="checkbox" name="languages" id="js" /&gt;
+        JS
+      &lt;/label&gt;
+      &lt;label class="--margin-right"&gt;
+        &lt;input type="checkbox" name="languages" id="python" /&gt;
+        Python
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/fieldset&gt;
+&lt;fieldset class="form__fieldset form__fieldset--space-between"&gt;
+  &lt;input
+    class="button button--primary"
+    type="submit"
+    value="Submit"
+  /&gt;
+  &lt;button class="button button--secundary"&gt;Cancel&lt;/button&gt;
+&lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+          </article>
+
+          <!-- Table  -->
+          <article class="article">
+            <h3 class="article__title">Table</h3>
+            <div class="article__example">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>
+                      <div class="table__header">
+                        <h5 class="table__header-title">Name</h5>
+                        <div class="table__header-arrows">
+                          <button class="table__header-arrow">
+                            <span><i class="fas fa-sort-up"></i></span>
+                          </button>
+                          <button class="table__header-arrow">
+                            <span><i class="fas fa-sort-down"></i></span>
+                          </button>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="table__header">
+                        <h5 class="table__header-title">Code</h5>
+                        <div class="table__header-arrows">
+                          <button class="table__header-arrow">
+                            <span><i class="fas fa-sort-up"></i></span>
+                          </button>
+                          <button class="table__header-arrow">
+                            <span><i class="fas fa-sort-down"></i></span>
+                          </button>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="table__header">
+                        <h5 class="table__header-title">Phone</h5>
+                        <div class="table__header-arrows">
+                          <button class="table__header-arrow">
+                            <span><i class="fas fa-sort-up"></i></span>
+                          </button>
+                          <button class="table__header-arrow">
+                            <span><i class="fas fa-sort-down"></i></span>
+                          </button>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="table__header">
+                        <h5 class="table__header-title">Status</h5>
+                        <div class="table__header-arrows">
+                          <button class="table__header-arrow">
+                            <span><i class="fas fa-sort-up"></i></span>
+                          </button>
+                          <button class="table__header-arrow">
+                            <span><i class="fas fa-sort-down"></i></span>
+                          </button>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="table__row">
+                    <td class="table__row-field">Some Name</td>
+                    <td class="table__row-field">N01</td>
+                    <td class="table__row-field">+51 123456789</td>
+                    <td class="table__row-field">Active</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__row-field">Other Name</td>
+                    <td class="table__row-field">N02</td>
+                    <td class="table__row-field">+51 123456789</td>
+                    <td class="table__row-field">Active</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__row-field">One More</td>
+                    <td class="table__row-field">N03</td>
+                    <td class="table__row-field">+51 123456789</td>
+                    <td class="table__row-field">Active</td>
+                  </tr>
+                  <tr class="table__row">
+                    <td class="table__row-field">Last One</td>
+                    <td class="table__row-field">N04</td>
+                    <td class="table__row-field">+51 123456789</td>
+                    <td class="table__row-field">Active</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;table class="table"&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;
+      &lt;div class="table__header"&gt;
+        &lt;h5 class="table__header-title"&gt;Name&lt;/h5&gt;
+        &lt;div class="table__header-arrows"&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-up"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-down"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/th&gt;
+    &lt;th&gt;
+      &lt;div class="table__header"&gt;
+        &lt;h5 class="table__header-title"&gt;Code&lt;/h5&gt;
+        &lt;div class="table__header-arrows"&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-up"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-down"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/th&gt;
+    &lt;th&gt;
+      &lt;div class="table__header"&gt;
+        &lt;h5 class="table__header-title"&gt;Phone&lt;/h5&gt;
+        &lt;div class="table__header-arrows"&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-up"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-down"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/th&gt;
+    &lt;th&gt;
+      &lt;div class="table__header"&gt;
+        &lt;h5 class="table__header-title"&gt;Status&lt;/h5&gt;
+        &lt;div class="table__header-arrows"&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-up"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+          &lt;button class="table__header-arrow"&gt;
+            &lt;span&gt;&lt;i class="fas fa-sort-down"&gt;&lt;/i&gt;&lt;/span&gt;
+          &lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr class="table__row"&gt;
+    &lt;td class="table__row-field"&gt;Some Name&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;N01&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;+51 123456789&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;Active&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="table__row"&gt;
+    &lt;td class="table__row-field"&gt;Other Name&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;N02&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;+51 123456789&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;Active&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="table__row"&gt;
+    &lt;td class="table__row-field"&gt;One More&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;N03&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;+51 123456789&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;Active&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr class="table__row"&gt;
+    &lt;td class="table__row-field"&gt;Last One&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;N04&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;+51 123456789&lt;/td&gt;
+    &lt;td class="table__row-field"&gt;Active&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+          </article>
+          <!-- END Table -->
+
+          <!-- Image Gallery -->
+          <article class="article">
+            <h3 class="article__title">Images Gallery</h3>
+            <div class="article__example article__example--image">
+              <div class="galery galery--horizontal">
+                <div class="galery__container galery__container--1">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery1.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+                <div class="galery__container galery__container--2">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery2.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+                <div class="galery__container galery__container--3">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery3.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+                <div class="galery__container galery__container--4">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery4.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+                <div class="galery__container galery__container--5">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery5.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+                <div class="galery__container galery__container--6">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery6.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+                <div class="galery__container galery__container--7">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery7.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+                <div class="galery__container galery__container--8">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery8.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+                <div class="galery__container galery__container--9">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery9.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+                <div class="galery__container galery__container--10">
+                  <img
+                    class="galery__img"
+                    src="images/image-galery10.webp"
+                    alt="Image galery"
+                  />
+                  <div class="galery__message"><span>View</span></div>
+                </div>
+              </div>
+            </div>
+            <pre class="article__code">
+<code class="code">&lt;div class="galery galery--horizontal"&gt;
+  &lt;div class="galery__container galery__container--1"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery1.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="galery__container galery__container--2"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery2.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="galery__container galery__container--3"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery3.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="galery__container galery__container--4"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery4.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="galery__container galery__container--5"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery5.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="galery__container galery__container--6"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery6.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="galery__container galery__container--7"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery7.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="galery__container galery__container--8"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery8.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="galery__container galery__container--9"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery9.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="galery__container galery__container--10"&gt;
+    &lt;img
+      class="galery__img"
+      src="images/image-galery10.webp"
+      alt="Image galery"
+    /&gt;
+    &lt;div class="galery__message"&gt;&lt;span&gt;View&lt;/span&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+          </article>
+          <!-- END Image Gallery -->
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

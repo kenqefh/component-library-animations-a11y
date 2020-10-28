@@ -1,0 +1,12 @@
+.checkbox_group {
+  display: flex;
+  flex-wrap: wrap;
+}
+.checkbox_group--vertical {
+  flex-direction: column;
+}
+
+.checkbox_group__description {
+  width: 100%;
+  margin-top: 8px;
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Component Library - Thypography</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/4016a7fab4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header class="header_page">
+      <img class="header_page__image" src="images/Desain_logo.png" alt="" />
+    </header>
+
+    <div class="page">
+      <nav class="page__nav">
+        <ul class="page_navbar">
+          <li class="page_navbar__item">
+            <a
+              class="page_navbar__link page_navbar__link--active"
+              href="index.html"
+            >
+              <p>Typography</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="elements.html">
+              <p>Elements</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="blocks.html">
+              <p>Blocks</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="layouts.html">
+              <p>Layouts</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+          <li class="page_navbar__item">
+            <a class="page_navbar__link" href="page1.html">
+              <p>Page1</p>
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="page__content">
+        <!-- Sectionof articles -->
+        <section class="section">
+          <h2 class="section__title">Typography</h2>
+
+          <article class="article">
+            <h3 class="article__title">Headings</h3>
+            <div class="article__example article_heading">
+              <h1 class="h1">h1. Eat, sleep, code, and repeat!</h1>
+              <h2 class="h2">h2. Eat, sleep, code, and repeat!</h2>
+              <h3 class="h3">h3. Eat, sleep, code, and repeat!</h3>
+              <h4 class="h4">h4. Eat, sleep, code, and repeat!</h4>
+              <h5 class="h5">h5. Eat, sleep, code, and repeat!</h5>
+              <h6 class="h6">h6. Eat, sleep, code, and repeat!</h6>
+            </div>
+            <pre class="article__code">
+<code class="code"><span class="code_blue">&lt;h1</span> <span class="code_red">class=</span><span class="code_yellow">"h1"</span><span class="code_blue">&gt;</span><span class="code_gray">h1. Eat, sleep, code, and repeat!</span><span class="code_blue">&lt;/h1&gt;</span>
+<span class="code_blue">&lt;h2</span> <span class="code_red">class=</span><span class="code_yellow">"h2"</span><span class="code_blue">&gt;</span><span class="code_gray">h2. Eat, sleep, code, and repeat!</span><span class="code_blue">&lt;/h2&gt;</span>
+<span class="code_blue">&lt;h3</span> <span class="code_red">class=</span><span class="code_yellow">"h3"</span><span class="code_blue">&gt;</span><span class="code_gray">h3. Eat, sleep, code, and repeat!</span><span class="code_blue">&lt;/h3&gt;</span>
+<span class="code_blue">&lt;h4</span> <span class="code_red">class=</span><span class="code_yellow">"h4"</span><span class="code_blue">&gt;</span><span class="code_gray">h4. Eat, sleep, code, and repeat!</span><span class="code_blue">&lt;/h4&gt;</span>
+<span class="code_blue">&lt;h5</span> <span class="code_red">class=</span><span class="code_yellow">"h5"</span><span class="code_blue">&gt;</span><span class="code_gray">h5. Eat, sleep, code, and repeat!</span><span class="code_blue">&lt;/h5&gt;</span>
+<span class="code_blue">&lt;h6</span> <span class="code_red">class=</span><span class="code_yellow">"h6"</span><span class="code_blue">&gt;</span><span class="code_gray">h6. Eat, sleep, code, and repeat!</span><span class="code_blue">&lt;/h6&gt;</span>
+</code></pre>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Paragraph</h3>
+            <div class="article__example">
+              <p class="paragraph">
+                The best programs are written so that computing machines can
+                perform them quickly and so that human beings can
+                <b>understand them clearly</b>. A programmer is ideally an
+                essayist who works with traditional aesthetic and literary forms
+                as well as mathematical concepts, to communicate the way that an
+                algorithm works and to convince a reader that the results will
+                be correct.
+              </p>
+            </div>
+            <pre class="article__code">
+<code class="code"><span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"paragraph"</span>&gt;
+<span class="code_gray">The best programs are written so that computing machines can
+perform them quickly and so that human beings can</span>
+<span class="code_blue">&lt;b&gt;</span><span class="code_gray">understand them clearly</span><span class="code_blue">&lt;/b&gt;</span><span class="code_gray">. A programmer is ideally an
+essayist who works with traditional aesthetic and literary
+forms as well as mathematical concepts, to communicate the way
+that an algorithm works and to convince a reader that the
+results will be correct.</span>
+<span class="code_blue">&lt;/p&gt;</span></code></pre>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Quote</h3>
+            <div class="article__example">
+              <blockquote class="quote">
+                <p class="quote__content">
+                  “Any fool can write code that a computer can understand. Good
+                  programmers write code that humans can understand.”
+                </p>
+                <footer>
+                  <p class="quote__autor">- Martin Fowler</p>
+                </footer>
+              </blockquote>
+            </div>
+            <pre class="article__code">
+<code class="code"><span class="code_blue">&lt;blockquote</span> <span class="code_red">class=</span><span class="code_yellow">"quote"</span><span class="code_blue">&gt;</span>
+<span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"quote__content"</span><span class="code_blue">&gt;</span>
+<span class="code_gray">“Any fool can write code that a computer can understand.
+  Good programmers write code that humans can understand.”</span>
+<span class="code_blue">&lt;/p&gt;</span>
+<span class="code_blue">&lt;footer&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"quote__autor"</span>&gt;<span class="code_gray">- Martin Fowler</span><span class="code_blue">&lt;/p&gt;</span>
+<span class="code_blue">&lt;/footer&gt;</span>
+<span class="code_blue">&lt;/blockquote&gt;</span></code></pre>
+          </article>
+
+          <article class="article">
+            <h3 class="article__title">Colors</h3>
+            <div class="article__example">
+              <ul class="colors">
+                <li class="color">
+                  <div class="color__circle color__circle--blue"></div>
+                  <p class="color__description">blue #118AB2</p>
+                </li>
+                <li class="color">
+                  <div class="color__circle color__circle--green"></div>
+                  <p class="color__description">green #06D6A0</p>
+                </li>
+                <li class="color">
+                  <div class="color__circle color__circle--yellow"></div>
+                  <p class="color__description">yellow #FFD166</p>
+                </li>
+                <li class="color">
+                  <div class="color__circle color__circle--red"></div>
+                  <p class="color__description">red #EF476F</p>
+                </li>
+                <li class="color">
+                  <div class="color__circle color__circle--midnight"></div>
+                  <p class="color__description">midnight #073B4C</p>
+                </li>
+                <li class="color">
+                  <div class="color__circle color__circle--light"></div>
+                  <p class="color__description">light #F8F9FA</p>
+                </li>
+                <li class="color">
+                  <div class="color__circle color__circle--white"></div>
+                  <p class="color__description">white #FFFFFF</p>
+                </li>
+                <li class="color">
+                  <div class="color__circle color__circle--gray"></div>
+                  <p class="color__description">gray #888888</p>
+                </li>
+                <li class="color">
+                  <div class="color__circle color__circle--black"></div>
+                  <p class="color__description">black #262626</p>
+                </li>
+              </ul>
+            </div>
+
+            <span class="code_red"></span>
+            <pre class="article__code">
+<code class="code"><span class="code_blue">&lt;ul</span> <span class="code_red">class=</span><span class="code_yellow">"colors"</span><span class="code_blue">&gt;</span>
+<span class="code_blue">&lt;li</span> <span class="code_red">class=</span><span class="code_yellow">"color"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;div</span> <span class="code_red">class=</span><span class="code_yellow">"color__circle color__circle--blue"</span><span class="code_blue">&gt;&lt;/div&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"color__description"</span><span class='code_blue'>&gt;</span><span class='code_gray'>blue #118AB2</span><span class='code_blue'>&lt;/p&gt;</span>
+<span class="code_blue">&lt;/li&gt;</span>
+<span class="code_blue">&lt;li</span> <span class="code_red">class=</span><span class="code_yellow">"color"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;div</span> <span class="code_red">class=</span><span class="code_yellow">"color__circle color__circle--green"</span><span class="code_blue">&gt;&lt;/div&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"color__description"</span><span class='code_blue'>&gt;</span><span class='code_gray'>green #06D6A0</span><span class='code_blue'>&lt;/p&gt;</span>
+<span class="code_blue">&lt;/li&gt;</span>
+<span class="code_blue">&lt;li</span> <span class="code_red">class=</span><span class="code_yellow">"color"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;div</span> <span class="code_red">class=</span><span class="code_yellow">"color__circle color__circle--yellow"</span><span class="code_blue">&gt;&lt;/div&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"color__description"</span><span class='code_blue'>&gt;</span><span class="code_gray">yellow #FFD166</span><span class='code_blue'>&lt;/p&gt;</span>
+<span class="code_blue">&lt;/li&gt;</span>
+<span class="code_blue">&lt;li</span> <span class="code_red">class=</span><span class="code_yellow">"color"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;div</span> <span class="code_red">class=</span><span class="code_yellow">"color__circle color__circle--red"</span><span class="code_blue">&gt;&lt;/div&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"color__description"</span><span class='code_blue'>&gt;</span><span class='code_gray'>red #EF476F</span><span class='code_blue'>&lt;/p&gt;</span>
+<span class="code_blue">&lt;/li&gt;</span>
+<span class="code_blue">&lt;li</span> <span class="code_red">class=</span><span class="code_yellow">"color"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;div</span> <span class="code_red">class=</span><span class="code_yellow">"color__circle color__circle--midnight"</span><span class="code_blue">&gt;&lt;/div&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"color__description"</span><span class='code_blue'>&gt;</span><span class='code_gray'>midnight #073B4C</span><span class='code_blue'>&lt;/p&gt;</span>
+<span class="code_blue">&lt;/li&gt;</span>
+<span class="code_blue">&lt;li</span> <span class="code_red">class=</span><span class="code_yellow">"color"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;div</span> <span class="code_red">class=</span><span class="code_yellow">"color__circle color__circle--light"</span><span class="code_blue">&gt;&lt;/div&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"color__description"</span><span class='code_blue'>&gt;</span><span class='code_gray'>light #F8F9FA</span><span class='code_blue'>&lt;/p&gt;</span>
+<span class="code_blue">&lt;/li&gt;</span>
+<span class="code_blue">&lt;li</span> <span class="code_red">class=</span><span class="code_yellow">"color"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;div</span> <span class="code_red">class=</span><span class="code_yellow">"color__circle color__circle--white"</span><span class="code_blue">&gt;&lt;/div&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"color__description"</span><span class='code_blue'>&gt;</span><span class='code_gray'>white #FFFFFF</span><span class='code_blue'>&lt;/p&gt;</span>
+<span class="code_blue">&lt;/li&gt;</span>
+<span class="code_blue">&lt;li</span> <span class="code_red">class=</span><span class="code_yellow">"color"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;div</span> <span class="code_red">class=</span><span class="code_yellow">"color__circle color__circle--gray"</span><span class="code_blue">&gt;&lt;/div&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"color__description"</span><span class='code_blue'>&gt;</span><span class='code_gray'>gray #888888</span><span class='code_blue'>&lt;/p&gt;</span>
+<span class="code_blue">&lt;/li&gt;</span>
+<span class="code_blue">&lt;li</span> <span class="code_red">class=</span><span class="code_yellow">"color"</span><span class="code_blue">&gt;</span>
+  <span class="code_blue">&lt;div</span> <span class="code_red">class=</span><span class="code_yellow">"color__circle color__circle--black"</span><span class="code_blue">&gt;&lt;/div&gt;</span>
+  <span class="code_blue">&lt;p</span> <span class="code_red">class=</span><span class="code_yellow">"color__description"</span><span class='code_blue'>&gt;</span><span class='code_gray'>black #262626</span><span class='code_blue'>&lt;/p&gt;</span>
+<span class="code_blue">&lt;/li&gt;</span>
+<span class="code_blue">&lt;/ul&gt;</span></code></pre>
+          </article>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
