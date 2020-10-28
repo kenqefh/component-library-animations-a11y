@@ -23,6 +23,9 @@
   --headings-font: "Piazzolla", serif;
   --system-font: "SF Pro Display", "Roboto", sans-serif;
   --code-font: "Source Code Pro", monospace;
+
+  /* Efects */
+  --box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 * {

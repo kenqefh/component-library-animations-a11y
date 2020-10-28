@@ -1,6 +1,9 @@
 .button--primary {
   color: var(--white-color);
   background-color: var(--blue-color);
+
+  transition: all 300ms;
+  transition-timing-function: ease-in-out;
 }
 .button--secundary {
   color: var(--white-color);
@@ -31,4 +34,9 @@
 .button--transparent:hover {
   opacity: 0.85;
   transition-duration: 0.35s;
+}
+
+.button--primary:hover {
+  box-shadow: var(--box-shadow);
+  transform: translateY(-4px);
 }
