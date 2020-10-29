@@ -247,7 +247,7 @@
           <!-- Input Checkbox -->
           <article class="article">
             <h3 class="article__title">Input: Checkbox</h3>
-            <div class="article__example">
+            <div class="article__checkbox">
               <label class="checkbox">
                 <input type="checkbox" name="state" value="checked" checked />
                 Checked
@@ -272,65 +272,67 @@
           <!-- Checkbox Group -->
           <article class="article">
             <h3 class="article__title">Checkbox Group</h3>
-            <div class="article__example">
+            <div class="article__checkbox-group">
               <div class="checkbox_group">
-                <p class="checkbox_group__description">
-                  Choose horizontal options:
-                </p>
+                <p>Choose horizontal options:</p>
 
-                <label class="checkbox">
-                  <input
-                    type="checkbox"
-                    name="horizontal"
-                    value="horizontal1"
-                    checked
-                  />
-                  Horizontal 1
-                </label>
+                <div class="checkbox_group__inputs">
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      name="horizontal"
+                      value="horizontal1"
+                      checked
+                    />
+                    Horizontal 1
+                  </label>
 
-                <label class="checkbox">
-                  <input
-                    type="checkbox"
-                    name="horizontal"
-                    value="horizontal2"
-                  />
-                  Horizontal 2
-                </label>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      name="horizontal"
+                      value="horizontal2"
+                    />
+                    Horizontal 2
+                  </label>
 
-                <label class="checkbox">
-                  <input
-                    type="checkbox"
-                    name="horizontal"
-                    value="horizontal3"
-                  />
-                  Horizontal 3
-                </label>
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      name="horizontal"
+                      value="horizontal3"
+                    />
+                    Horizontal 3
+                  </label>
+                </div>
               </div>
 
-              <div class="checkbox_group checkbox_group--vertical">
-                <p class="checkbox_group__description">
-                  <span class="warning">*</span>Choose vertical options:
-                </p>
+              <div class="checkbox_group">
+                <p><span class="warning">*</span>Choose vertical options:</p>
 
-                <label class="checkbox">
-                  <input
-                    type="checkbox"
-                    name="vertical"
-                    value="vertical1"
-                    checked
-                  />
-                  Vertical 1
-                </label>
+                <div
+                  class="checkbox_group__inputs checkbox_group__inputs--vertical"
+                >
+                  <label class="checkbox">
+                    <input
+                      type="checkbox"
+                      name="vertical"
+                      value="vertical1"
+                      checked
+                    />
+                    Vertical 1
+                  </label>
 
-                <label class="checkbox">
-                  <input type="checkbox" name="vertical" value="vertical2" />
-                  Vertical 2
-                </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="vertical" value="vertical2" />
+                    Vertical 2
+                  </label>
 
-                <label class="checkbox">
-                  <input type="checkbox" name="vertical" value="vertical3" />
-                  Vertical 3
-                </label>
+                  <label class="checkbox">
+                    <input type="checkbox" name="vertical" value="vertical3" />
+                    Vertical 3
+                  </label>
+                </div>
 
                 <span class="warning text--lite">Choose at least 1 option</span>
               </div>

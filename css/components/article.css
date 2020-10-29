@@ -18,6 +18,18 @@
   overflow-x: auto;
 }
 
+/* Articles */
+.article__checkbox {
+  display: flex;
+  gap: 16px;
+}
+
+.article__checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 /* modifiers */
 
 .article__example--bottom-align {
