@@ -404,24 +404,26 @@
           <!-- Input: Radio Button -->
           <article class="article">
             <h3 class="article__title">Input: Radio Button</h3>
-            <div class="article__example">
-              <input
-                class="radio_button"
-                type="radio"
-                name="radio"
-                value="checked"
-                id="radio_button1"
-                checked
-              />
-              <label for="radio_button1"> Checked</label>
-              <input
-                class="radio_button"
-                type="radio"
-                name="radio"
-                value="unchecked"
-                id="radio_button2"
-              />
-              <label for="radio_button2"> Unchecked</label>
+            <div class="article__radio-button">
+              <label class="radio_button">
+                <input
+                  type="radio"
+                  name="radio"
+                  value="checked"
+                  id="radio_button1"
+                  checked
+                />
+                <span>Checked</span>
+              </label>
+              <label class="radio_button">
+                <input
+                  type="radio"
+                  name="radio"
+                  value="unchecked"
+                  id="radio_button2"
+                />
+                <span>Unchecked</span>
+              </label>
             </div>
             <pre class="article__code">
 <code class="code">&lt;input
@@ -447,75 +449,75 @@
           <!-- Radio Button Group -->
           <article class="article">
             <h3 class="article__title">Radio Button Group</h3>
-            <div class="article__example">
+            <div class="article__radiobutton-group">
               <div class="radiobutton_group">
-                <p class="radiobutton_group__description">
-                  Choose horizontal options:
-                </p>
+                <p>Choose horizontal options:</p>
 
-                <input
-                  class="radio_button"
-                  type="radio"
-                  name="radiobutton_group"
-                  value="checked"
-                  id="radiobutton1"
-                  checked
-                />
-                <label for="radiobutton1"> Option 1</label>
+                <div class="radiobutton_group__inputs">
+                  <label class="radio_button">
+                    <input
+                      type="radio"
+                      name="radiobutton_group"
+                      value="checked"
+                      checked
+                    />
+                    <span>Option 1</span>
+                  </label>
 
-                <input
-                  class="radio_button"
-                  type="radio"
-                  name="radiobutton_group"
-                  value="checked"
-                  id="radiobutton2"
-                />
-                <label for="radiobutton2"> Option 2</label>
+                  <label class="radio_button">
+                    <input
+                      type="radio"
+                      name="radiobutton_group"
+                      value="checked"
+                    />
+                    <span>Option 2</span>
+                  </label>
 
-                <input
-                  class="radio_button"
-                  type="radio"
-                  name="radiobutton_group"
-                  value="checked"
-                  id="radiobutton3"
-                />
-                <label for="radiobutton3"> Option 3</label>
+                  <label class="radio_button">
+                    <input
+                      type="radio"
+                      name="radiobutton_group"
+                      value="checked"
+                    />
+                    <span>Option 3</span>
+                  </label>
+                </div>
               </div>
 
-              <div class="radiobutton_group radiobutton_group--vertical">
-                <p class="radiobutton_group__description">
-                  <span class="warning">*</span> Choose horizontal options:
-                </p>
-                <div>
-                  <input
-                    class="radio_button"
-                    type="radio"
-                    name="radiobutton_group_vertical"
-                    value="checked"
-                    id="radiobutton11"
-                  />
-                  <label for="radiobutton11"> Option 1</label>
-                </div>
+              <div class="radiobutton_group">
+                <p><span class="warning">*</span> Choose horizontal options:</p>
 
-                <div>
-                  <input
-                    class="radio_button"
-                    type="radio"
-                    name="radiobutton_group_vertical"
-                    value="checked"
-                    id="radiobutton12"
-                  />
-                  <label for="radiobutton12"> Option 2</label>
-                </div>
-                <div>
-                  <input
-                    class="radio_button"
-                    type="radio"
-                    name="radiobutton_group_vertical"
-                    value="checked"
-                    id="radiobutton13"
-                  />
-                  <label for="radiobutton13"> Option 3</label>
+                <div
+                  class="radiobutton_group__inputs radiobutton_group__inputs--vertical"
+                >
+                  <label class="radio_button">
+                    <input
+                      type="radio"
+                      name="radiobutton_group_vertical"
+                      value="checked"
+                      id="radiobutton11"
+                    />
+                    <span>Option 1</span>
+                  </label>
+
+                  <label class="radio_button">
+                    <input
+                      type="radio"
+                      name="radiobutton_group_vertical"
+                      value="checked"
+                      id="radiobutton12"
+                    />
+                    <span>Option 2</span>
+                  </label>
+                  <label class="radio_button">
+                    <input
+                      type="radio"
+                      name="radiobutton_group_vertical"
+                      value="checked"
+                      id="radiobutton13"
+                    />
+                    <span>Option 3</span>
+                  </label>
                 </div>
                 <span class="warning text--lite">Choose 1 option</span>
               </div>

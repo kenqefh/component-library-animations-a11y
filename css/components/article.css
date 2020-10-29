@@ -30,6 +30,16 @@
   gap: 16px;
 }
 
+.article__radio-button {
+  display: flex;
+  gap: 16px;
+}
+
+.article__radiobutton-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 /* modifiers */
 
 .article__example--bottom-align {

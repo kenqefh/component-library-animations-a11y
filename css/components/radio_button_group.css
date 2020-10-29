@@ -1,13 +1,12 @@
 .radiobutton_group {
   display: flex;
-  flex-wrap: wrap;
-}
-.radiobutton_group--vertical {
   flex-direction: column;
+  gap: 8px;
 }
-
-.radiobutton_group__description {
-  display: block;
-  width: 100%;
-  margin-top: 8px;
+.radiobutton_group__inputs {
+  display: flex;
+  gap: 16px;
+}
+.radiobutton_group__inputs--vertical {
+  flex-direction: column;
 }

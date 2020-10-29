@@ -5,7 +5,6 @@
   display: flex;
   gap: 8px;
   align-items: center;
-  border: 1px solid red;
 }
 
 .checkbox:active {
@@ -16,6 +15,6 @@
 
 @keyframes checkbox-animation {
   50% {
-    transform: translateY(-1px);
+    transform: translateY(-1px) translateX(-0.5px);
   }
 }

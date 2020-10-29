@@ -1,14 +1,26 @@
 .radio_button {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  font-family: var(--body-font);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid turquoise;
 }
-.radio_button:checked + label {
-  font-weight: 400;
+.radio_button > input[type="radio"]:checked + span {
+  font-weight: 500;
 }
 
-.radio_button + label {
-  margin-top: 8px;
-  margin-right: 16px;
-  margin-bottom: 8px;
-  padding-left: 4px;
+.radio_button:active {
+  animation-name: radio_button-animation;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in;
+}
+
+@keyframes radio_button-animation {
+  50% {
+    transform: translateY(-1px) translateX(0.5px);
+  }
 }
