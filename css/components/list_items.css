@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  gap: 16px;
 }
 
 .listitems__item {
@@ -14,7 +15,7 @@
   color: var(--black-color);
   border: 1px solid var(--light-color);
   padding: 4px 16px;
-  margin-left: 16px;
+  background: none;
 }
 
 .listitem--hover {
@@ -25,4 +26,41 @@
   background-color: var(--blue-color);
   color: var(--white-color);
   border: 1px solid var(--blue-color);
+}
+
+.listitems__item-hover-efect {
+  position: relative;
+  background: none;
+}
+
+.listitems__item-hover-efect::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
+  background-color: var(--light-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 300ms ease-in-out;
+  z-index: -1;
+}
+.listitems__item-hover-efect:hover {
+  animation-name: list-item-animation;
+  animation-duration: 300ms;
+  animation-timing-function: ease-out;
+}
+.listitems__item-hover-efect:hover::after {
+  transform: scaleX(1);
+}
+.listitems__item-hover-efect {
+  z-index: 0; /* Necesary to work hover efect */
+}
+
+@keyframes list-item-animation {
+  50% {
+    transform: translateY(1px);
+  }
 }
