@@ -40,6 +40,12 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.article__images-gallery {
+  width: 750px;
+  padding: 8px;
+  margin: 8px;
+}
 /* modifiers */
 
 .article__example--bottom-align {
