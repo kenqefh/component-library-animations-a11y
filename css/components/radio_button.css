@@ -7,7 +7,6 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  border: 1px solid turquoise;
 }
 .radio_button > input[type="radio"]:checked + span {
   font-weight: 500;
